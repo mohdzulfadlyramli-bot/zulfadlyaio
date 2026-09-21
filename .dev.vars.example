@@ -1,0 +1,3 @@
+# Optional. Rill generates its own signing key when this is absent.
+# RILL_SECRET=
+# TMDB_KEY=

@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "zulfadlyaio",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-06-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "rules": [{ "type": "Text", "globs": ["**/*.sql"] }],
+  "d1_databases": [{ "binding": "DB", "database_name": "rill", "migrations_dir": "migrations","database_id": "e225674d-3d01-4b88-8470-0177329a3f4c" }],
+  "triggers": { "crons": ["* * * * *"] },
+  "observability": { "enabled": true },
+  "vars": {}
+}

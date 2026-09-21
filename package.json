@@ -1,0 +1,23 @@
+{
+  "name": "zulfadlyaio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "build": "node scripts/build.mjs",
+    "migrate": "wrangler d1 migrations apply DB --remote",
+    "deploy": "node scripts/deploy.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "hono": "^4.6.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.0.0",
+    "typescript": "^5.6.0",
+    "wrangler": "^4.0.0"
+  },
+  "description": "Software you deploy and manage in your own Cloudflare account.",
+  "license": "MIT"
+}

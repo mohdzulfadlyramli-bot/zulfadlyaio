@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS person_labels (
+  id TEXT PRIMARY KEY,
+  name TEXT NOT NULL
+);
